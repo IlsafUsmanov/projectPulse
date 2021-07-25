@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/font.css">
+    <!-- <link rel="stylesheet" href="css/font.css"> -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -59,8 +60,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="advantages">
+    </section>
+    <section class="advantages">
         <div class="container">
             <h2 class="title">Наши преимущества</h2>
             <div class="advantages__wrapper">
@@ -93,9 +94,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="consultation">
-        <h2 class="container">
+    </section>
+    <section class="consultation">
+        <div class="container">
             <div class="title title_left">
                 Получите бесплатную консультацию<br>по подбору пульсометра 
             </div>
@@ -109,7 +110,27 @@
                 <input required type="email" name="email" placeholder="Ваш e-mail">
                 <button class="button button_main">Заказать консультацию</button>
             </form>
-        </h2>
-    </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide1.png" alt="slide1">
+                </div>
+                <div>
+                    <img src="img/slide2.png" alt="slide2">
+                </div>
+                <div>
+                    <img src="img/slide3.png" alt="slide3">
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
