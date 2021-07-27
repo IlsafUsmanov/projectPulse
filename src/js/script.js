@@ -48,4 +48,33 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('fast');
     })
   })
+
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите свое имя",
+        phone: "Пожалуйста, введите свой номер телефона",
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "Неправильно введен адрес почты"
+        }
+      }
+    });
+  }
+
+  validateForms('#consultation form');
+  validateForms('#form');
+  validateForms('#order form');
+
+
+  $('input[name=phone]').mask("+7 (999) 999-9999");
 });
