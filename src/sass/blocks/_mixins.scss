@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .catalog {
+        &__content {
+            &_active {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &-item {
+            margin-right: 20px;
+        }
+    }
+    .feed {
+        &__img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .carousel {
+        &__inner {
+        // max-width: 700px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .header {
+        &__phone{
+            font-size: 16px;
+        }
+        &__logo {
+            width: 191px;
+        }
+        &__offiial {
+            span {
+                margin-top: 0;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .advantages {
+        &__item {
+            width: 172px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+
+    .title {
+        &__left {
+            font-size: 24px;
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .catalog {
+        &__tab {
+            width: 155px;
+            font-size: 16px;
+        }
+    }
+    .footer {
+        &__info  {
+            width: 320px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+            padding-left: 0;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+    }
+    .feed {
+        img {
+            display: none;
+        }
+    }
+    .promo {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 90px;
+        }
+        &__icons {
+            width: 320px;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__subheader {
+            text-align: center;
+        }
+    }
+    .header {
+        &__logo {
+            margin-right: 10px;
+        }
+        &__official {
+            display: none;
+        }
+    }
+    .footer {
+        &__social {
+            &-item {
+                margin: 0 4px;
+            }
+        }
+    }
+}
